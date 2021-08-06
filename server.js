@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 //Generate Unique ID
-// const generateUniqueId = require('generate-unique-id');
+const generateUniqueId = require('generate-unique-id');
 
 
 //Create New Note
@@ -58,7 +58,7 @@ app.get('/api/notes', (req, res) => {
 
 
 app.post('/api/notes', (req, res) => {
-    // req.body.id = generateUniqueId();
+      req.body.id = generateUniqueId();
 
     // if (!validateNote(req.body)) {
     //     res.status(400).send('You must enter both a title and a body.');
