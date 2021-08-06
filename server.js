@@ -44,7 +44,9 @@ app.post('/api/notes', (req, res) => {
   res.json(note);
 });
     
-//Bonus - DELETE
+//Bonus - DELETE 
+//NOTE: Found this code almost exactly as needed here: https://www.tabnine.com/code/javascript/functions/express/Express/delete
+// I'm probably going to use this a lot in the future because wow what a resource!!
 app.delete('/api/notes/:id', (req, res) => {
   const { id } = req.params;
 
