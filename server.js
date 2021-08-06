@@ -16,15 +16,15 @@ app.use(express.static('public'));
 
 
 //Create New Note
-// function createNewNote(body, notesArray) {
-//     const note = body;
-//     notesArray.push(note);
-//     fs.writeFileSync(
-//       path.join(__dirname, './db/db.json'),
-//       JSON.stringify({ notes: notesArray }, null, 2)
-//     );
-//     return note;
-//   }
+function createNewNote(body, notesArray) {
+    const note = body;
+    notesArray.push(note);
+    fs.writeFileSync(
+      path.join(__dirname, './db/db.json'),
+      JSON.stringify({ notes: notesArray }, null, 2)
+    );
+    return note;
+  }
   
 //Validate note contents
 // function validateNote(note) {
@@ -57,16 +57,16 @@ app.get('/api/notes', (req, res) => {
 });
 
 
-// app.post('/api/notes', (req, res) => {
-//     req.body.id = generateUniqueId();
+app.post('/api/notes', (req, res) => {
+    // req.body.id = generateUniqueId();
 
-//     if (!validateNote(req.body)) {
-//         res.status(400).send('You must enter both a title and a body.');
-//       } else {
-//         const note = createNewNote(req.body, notes);
-//         res.json(note);
-//       }
-//     });
+    // if (!validateNote(req.body)) {
+    //     res.status(400).send('You must enter both a title and a body.');
+    //   } else {
+        const note = createNewNote(req.body, notes);
+        res.json(note);
+      // }
+    });
     
 
 
