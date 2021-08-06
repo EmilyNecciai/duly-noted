@@ -1,19 +1,9 @@
 {
   "notes": [
     {
-      "title": "Test Title",
-      "text": "Test text",
-      "id": "0"
-    },
-    {
-      "title": "Test Title1",
-      "text": "Test text1",
-      "id": "1"
-    },
-    {
-      "title": "Aksdfl",
-      "text": "ahasjfk",
-      "id": "gukmhvt4uxwr4nsocay0"
+      "title": "How to Use Note Taker / Duly Noted (Don't Delete Me!)",
+      "text": "Welcome to Duly Noted, the note-taker web app! \n\nThis app is pretty cool! It's a simple app to use! \n\nJust click on the plus button to create a new note, then fill in the Note Title and Note Text fields! \n\nClick save and it'll appear in your list to the left. \n\nTo delete a note, click the red Trash icon next to the note. \n\n\n\nHappy note-taking!",
+      "id": "bupm3g6j2df08p6czsxk"
     }
   ]
 }
